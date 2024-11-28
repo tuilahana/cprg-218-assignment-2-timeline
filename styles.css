@@ -53,10 +53,7 @@ button{
 }
 
 #main-image {
-    margin:10px;
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+    margin:30px;
 }
 
 
@@ -78,55 +75,155 @@ button{
     padding: 10px;
 }
 
-  @media (max-width: 1000px) {
-    .container{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+/* For small devices (320px to 768px) */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
 
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .button-container {
-      width: 100%;
-    }
-  
-    button {
-      width: 100%;
-    }
-    
-    #main-image {
-      max-width: 100%;
-      margin: 20px auto;
+  .container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  #main-image {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  #image-title {
+    font-size: 2em;
+  }
+
+  #image-description {
+    font-size: 1.1em;
+    padding: 10px;
   }
 }
 
-  /*devices greater than 1000px wide*/
-  @media (min-width: 1000px) {
-    header{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    
-    .content{
-      display:flex ;
-      flex-direction: row;
-      align-items: flex-start;
+/* For medium devices (769px to 1000px) */
+@media (min-width: 769px) and (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-container {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #main-image {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  #image-title {
+    font-size: 2.2em;
+  }
+
+  #image-description {
+    font-size: 1.2em;
+  }
+}
+
+/* For large devices (1001px to 1600px) */
+@media (min-width: 1001px) and (max-width: 1600px) {
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   
-    figure img {
-      max-width: 800px;
-      margin-right: 20px;
+  .content{
+    display:flex ;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+  #main-image {
+    max-width: 600px;
+    margin: 10px;
     }
-  
-    figcaption {
-      width: auto;
-      padding: 0;
-      margin: 0;
-    }
+
+  #image-title {
+    font-size: 2.5em;
   }
+
+  #image-description {
+    font-size: 1.3em;
+  }
+}
+
+/* For extra large devices (1601px to 3200px) */
+@media (min-width: 1601px) and (max-width: 3200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-container {
+    width: auto;
+  }
+
+  button {
+    width: auto;
+    margin: 10px;
+  }
+
+  #main-image {
+    max-width: 1000px;
+    margin: 20px;
+  }
+
+  #image-title {
+    font-size: 3em;
+  }
+
+  #image-description {
+    font-size: 1.4em;
+  }
+}

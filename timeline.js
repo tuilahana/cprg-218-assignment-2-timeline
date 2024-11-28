@@ -1,10 +1,10 @@
 intro.addEventListener('click',function(){
-    console.log(intro);
+    console.log("intro");
     document.body.classList.remove("paleolithic");
     document.body.classList.remove("mesolithic");
     document.body.classList.remove("neolithic");
     document.body.classList.add('intro');
-    document.getElementById('main-image').src="iimages/Stone_age_by_Vasnetsov_04.jpg";
+    document.getElementById('main-image').src="images/Stone_age_by_Vasnetsov_04.jpg";
 	document.getElementById('main-image').alt="Stone Age";
     document.getElementById("image-title").innerHTML="Introduction";
     document.getElementById("image-description").innerHTML="The Stone Age was a broad prehistoric period during which stone was widely used to make stone tools with an edge, a point, or a percussion surface. The period lasted for roughly 3.4 million years and ended between 4000 BC and 2000 BC, with the advent of metalworking. The Stone Age is the first period in the three-age system frequently used in archaeology to divide the timeline of human technological prehistory into functional periods, with the next two being the Bronze Age and the Iron Age, respectively. The Stone Age is also commonly divided into three distinct periods: the earliest and most primitive being the Paleolithic era; a transitional period with finer tools known as the Mesolithic era; and the final stage known as the Neolithic era. [1]"
@@ -15,7 +15,7 @@ intro.addEventListener('click',function(){
 })
 
 paleolithic.addEventListener('click',function(){
-    console.log(paleolithic);
+    console.log("paleolithic");
     document.body.classList.remove("intro");
     document.body.classList.remove("mesolithic");
     document.body.classList.remove("neolithic");
@@ -28,12 +28,10 @@ paleolithic.addEventListener('click',function(){
     document.getElementById("intro").style.background= "#8B4513";
     document.getElementById("mesolithic").style.background= "#8B4513";
     document.getElementById("neolithic").style.background= "#8B4513";
-
-
 })
 
 mesolithic.addEventListener('click',function(){
-    console.log(mesolithic);
+    console.log("mesolithic");
     document.body.classList.remove("intro");
     document.body.classList.remove("paleolithic");
     document.body.classList.remove("neolithic");
@@ -49,7 +47,7 @@ mesolithic.addEventListener('click',function(){
 })
 
 neolithic.addEventListener('click',function(){
-    console.log(neolithic);
+    console.log("neolithic");
     document.body.classList.remove("intro");
     document.body.classList.remove("paleolithic");
     document.body.classList.remove("mesolithic");
@@ -57,7 +55,7 @@ neolithic.addEventListener('click',function(){
     document.getElementById('main-image').src="images/Neolithic.jpg";
 	document.getElementById('main-image').alt="Neolithic";
     document.getElementById("image-title").innerHTML="The Neolithic Era";
-    document.getElementById("image-description").innerHTML="The Neolithic or New Stone Age (from Greek νέος néos 'new' and λίθος líthos 'stone') is an archaeological period, the final division of the Stone Age in Europe, Asia, Mesopotamia and Africa (c. 10,000 BC to c. 2,000 BC). The Neolithic began about 12,000 years ago, when farming appeared in the Epipalaeolithic Near East and Mesopotamia, and later in other parts of the world. It lasted in the Near East until the transitional period of the Chalcolithic (Copper Age) from about 6,500 years ago (4500 BC), marked by the development of metallurgy, leading up to the Bronze Age and Iron Age. In other places, the Neolithic followed the Mesolithic (Middle Stone Age) and then lasted until later. In Ancient Egypt, the Neolithic lasted until the Protodynastic period, c. 3150 BC. In China, it lasted until circa 2000 BC with the rise of the pre-Shang Erlitou culture, as it did in Scandinavia.[4]"
+    document.getElementById("image-description").innerHTML="The Neolithic or New Stone Age is an archaeological period, the final division of the Stone Age in Europe, Asia, Mesopotamia and Africa (c. 10,000 BC to c. 2,000 BC). The Neolithic began about 12,000 years ago, when farming appeared in the Epipalaeolithic Near East and Mesopotamia, and later in other parts of the world. It lasted in the Near East until the transitional period of the Chalcolithic (Copper Age) from about 6,500 years ago (4500 BC), marked by the development of metallurgy, leading up to the Bronze Age and Iron Age. In other places, the Neolithic followed the Mesolithic (Middle Stone Age) and then lasted until later. In Ancient Egypt, the Neolithic lasted until the Protodynastic period, c. 3150 BC. In China, it lasted until circa 2000 BC with the rise of the pre-Shang Erlitou culture, as it did in Scandinavia.[4]"
     document.getElementById("neolithic").style.background= "darkolivegreen";
     document.getElementById("intro").style.background= "#8B4513";
     document.getElementById("paleolithic").style.background= "#8B4513";
