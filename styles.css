@@ -52,11 +52,6 @@ button{
   color: white;
 }
 
-#main-image {
-    margin:30px;
-}
-
-
 #image-title {
     font-size: 2.5em;
     margin-top: 10px;
@@ -111,14 +106,6 @@ button{
     margin: 10px 0;
   }
 
-  #image-title {
-    font-size: 2em;
-  }
-
-  #image-description {
-    font-size: 1.1em;
-    padding: 10px;
-  }
 }
 
 /* For medium devices (769px to 1000px) */
@@ -146,14 +133,6 @@ button{
     max-width: 100%;
     margin: 10px 0;
   }
-
-  #image-title {
-    font-size: 2.2em;
-  }
-
-  #image-description {
-    font-size: 1.2em;
-  }
 }
 
 /* For large devices (1001px to 1600px) */
@@ -169,20 +148,13 @@ button{
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-}
+  }
 
   #main-image {
     max-width: 600px;
     margin: 10px;
-    }
-
-  #image-title {
-    font-size: 2.5em;
   }
 
-  #image-description {
-    font-size: 1.3em;
-  }
 }
 
 /* For extra large devices (1601px to 3200px) */
@@ -219,11 +191,4 @@ button{
     margin: 20px;
   }
 
-  #image-title {
-    font-size: 3em;
-  }
-
-  #image-description {
-    font-size: 1.4em;
-  }
 }
