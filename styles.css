@@ -106,6 +106,10 @@ button{
     margin: 10px 0;
   }
 
+  #image-citation {
+    margin: 10px;
+  }
+
 }
 
 /* For medium devices (769px to 1000px) */
@@ -133,6 +137,10 @@ button{
     max-width: 100%;
     margin: 10px 0;
   }
+
+  #image-citation {
+    margin: 10px;
+  }
 }
 
 /* For large devices (1001px to 1600px) */
@@ -150,8 +158,18 @@ button{
     justify-content: center;
   }
 
+  .image {
+    display:flex ;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   #main-image {
     max-width: 600px;
+    margin: 10px;
+  }
+
+  #image-citation {
     margin: 10px;
   }
 
@@ -172,6 +190,12 @@ button{
   }
 
   .content{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
     display:flex ;
     flex-direction: column;
     align-items: center;
